@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SilverJewelry_BOs", "SilverJewelry_BOs\SilverJewelry_BOs.csproj", "{3E9E03D0-AD34-433B-9CC9-09C3FEC3F300}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SilverJewelry_DAO", "SilverJewelry_DAO\SilverJewelry_DAO.csproj", "{4FEBD2A5-666A-4FEF-95FB-96F5E8D92940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverJewelry_Repositories", "SilverJewelry_Repositories\SilverJewelry_Repositories.csproj", "{3A9DBC32-0783-407D-83B3-D8A437873C5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverJewelry_APIs", "SilverJewelry_APIs\SilverJewelry_APIs.csproj", "{B612DED2-7F81-42F7-98B2-8F1398ABA66F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverJewelry_RazorPages", "SilverJewelry_RazorPages\SilverJewelry_RazorPages.csproj", "{D9E763B5-4EA3-4F10-B487-6C8121F3E9E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E9E03D0-AD34-433B-9CC9-09C3FEC3F300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9E03D0-AD34-433B-9CC9-09C3FEC3F300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9E03D0-AD34-433B-9CC9-09C3FEC3F300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9E03D0-AD34-433B-9CC9-09C3FEC3F300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FEBD2A5-666A-4FEF-95FB-96F5E8D92940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEBD2A5-666A-4FEF-95FB-96F5E8D92940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FEBD2A5-666A-4FEF-95FB-96F5E8D92940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEBD2A5-666A-4FEF-95FB-96F5E8D92940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9DBC32-0783-407D-83B3-D8A437873C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9DBC32-0783-407D-83B3-D8A437873C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9DBC32-0783-407D-83B3-D8A437873C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9DBC32-0783-407D-83B3-D8A437873C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B612DED2-7F81-42F7-98B2-8F1398ABA66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B612DED2-7F81-42F7-98B2-8F1398ABA66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B612DED2-7F81-42F7-98B2-8F1398ABA66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B612DED2-7F81-42F7-98B2-8F1398ABA66F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E763B5-4EA3-4F10-B487-6C8121F3E9E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E763B5-4EA3-4F10-B487-6C8121F3E9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E763B5-4EA3-4F10-B487-6C8121F3E9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E763B5-4EA3-4F10-B487-6C8121F3E9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB9557E5-5DDC-4999-92C8-F880AA858D16}
+	EndGlobalSection
+EndGlobal

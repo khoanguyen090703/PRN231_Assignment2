@@ -1,0 +1,17 @@
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\bin\Debug\net8.0\SilverJewelry_Repositories.deps.json
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\bin\Debug\net8.0\SilverJewelry_Repositories.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\bin\Debug\net8.0\SilverJewelry_Repositories.pdb
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\bin\Debug\net8.0\SilverJewelry_BOs.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\bin\Debug\net8.0\SilverJewelry_DAO.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\bin\Debug\net8.0\SilverJewelry_DAO.pdb
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\bin\Debug\net8.0\SilverJewelry_BOs.pdb
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJewelry_Repositories.csproj.AssemblyReference.cache
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJewelry_Repositories.GeneratedMSBuildEditorConfig.editorconfig
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJewelry_Repositories.AssemblyInfoInputs.cache
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJewelry_Repositories.AssemblyInfo.cs
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJewelry_Repositories.csproj.CoreCompileInputs.cache
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJe.DB42B3E0.Up2Date
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJewelry_Repositories.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\refint\SilverJewelry_Repositories.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJewelry_Repositories.pdb
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\ref\SilverJewelry_Repositories.dll

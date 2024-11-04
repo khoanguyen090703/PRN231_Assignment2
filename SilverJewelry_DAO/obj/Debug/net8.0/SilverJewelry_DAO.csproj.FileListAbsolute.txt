@@ -1,0 +1,15 @@
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_DAO.deps.json
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_DAO.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_DAO.pdb
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_BOs.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_BOs.pdb
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.csproj.AssemblyReference.cache
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.GeneratedMSBuildEditorConfig.editorconfig
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.AssemblyInfoInputs.cache
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.AssemblyInfo.cs
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.csproj.CoreCompileInputs.cache
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJe.03A29E5B.Up2Date
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\refint\SilverJewelry_DAO.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.pdb
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\ref\SilverJewelry_DAO.dll
