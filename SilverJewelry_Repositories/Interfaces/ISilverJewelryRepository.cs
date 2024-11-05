@@ -1,4 +1,5 @@
 ﻿using SilverJewelry_BOs;
+using SilverJewelry_Repositories.Models.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace SilverJewelry_Repositories.Interfaces
         Task<List<SilverJewelry>> GetAll(string? searchValue);
 
 
-        Task Insert(SilverJewelry silverJewelry);
+        Task Insert(CreateSilverJewelryRequest silverJewelry);
 
         Task Update(SilverJewelry silverJewelry);
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -12,11 +13,11 @@ namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
 {
     public class DeleteModel : PageModel
     {
-        private readonly SilverJewelry_DAO.Data.SilverJewelry2023DbContext _context;
+        private readonly HttpClient _httpClient;
 
-        public DeleteModel(SilverJewelry_DAO.Data.SilverJewelry2023DbContext context)
+        public DeleteModel()
         {
-            _context = context;
+           _httpClient = new HttpClient();
         }
 
         [BindProperty]
@@ -24,21 +25,37 @@ namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
 
         public async Task<IActionResult> OnGetAsync(string id)
         {
+            var accessToken = HttpContext.Session.GetString("AccessToken");
+            if (string.IsNullOrEmpty(accessToken))
+            {
+                return RedirectToPage("/Login");
+            }
+
+            var role = HttpContext.Session.GetInt32("Role");
+            if (role == null || role != 1)
+            {
+                return RedirectToPage("/Privacy");
+            }
+
             if (id == null)
             {
                 return NotFound();
             }
 
-            var silverjewelry = await _context.SilverJewelries.FirstOrDefaultAsync(m => m.SilverJewelryId == id);
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+            HttpResponseMessage response = await _httpClient.GetAsync("http://localhost:5174/SilverJewelry/" + id);
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+            };
+            var data = await response.Content.ReadAsStringAsync();
+            var silverJewelry = JsonSerializer.Deserialize<SilverJewelry>(data, options);
 
-            if (silverjewelry == null)
+            if (silverJewelry == null)
             {
                 return NotFound();
             }
-            else
-            {
-                SilverJewelry = silverjewelry;
-            }
+            SilverJewelry = silverJewelry;
             return Page();
         }
 
@@ -49,15 +66,19 @@ namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
                 return NotFound();
             }
 
-            var silverjewelry = await _context.SilverJewelries.FindAsync(id);
-            if (silverjewelry != null)
+            var accessToken = HttpContext.Session.GetString("AccessToken");
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+            HttpResponseMessage response = await _httpClient.DeleteAsync("http://localhost:5174/SilverJewelry/" + id);
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                SilverJewelry = silverjewelry;
-                _context.SilverJewelries.Remove(SilverJewelry);
-                await _context.SaveChangesAsync();
+                return RedirectToPage("./Index");
+            }
+            else if (response.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            {
+                return RedirectToPage("/Privacy", new { message = "You are not allowed to access delete function!" });
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage();
         }
     }
 }

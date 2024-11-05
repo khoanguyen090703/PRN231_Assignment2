@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D9E763B5-4EA3-4F10-B487-6C8121F3E9E7}|SilverJewelry_RazorPages\\SilverJewelry_RazorPages.csproj|e:\\asp.net\\prn231_assignment1_khoanvdse173299_solution\\silverjewelry_razorpages\\pages\\silverjewelrypages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9E763B5-4EA3-4F10-B487-6C8121F3E9E7}|SilverJewelry_RazorPages\\SilverJewelry_RazorPages.csproj|solutionrelative:silverjewelry_razorpages\\pages\\silverjewelrypages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B612DED2-7F81-42F7-98B2-8F1398ABA66F}|SilverJewelry_APIs\\SilverJewelry_APIs.csproj|e:\\asp.net\\prn231_assignment1_khoanvdse173299_solution\\silverjewelry_apis\\controllers\\silverjewelrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B612DED2-7F81-42F7-98B2-8F1398ABA66F}|SilverJewelry_APIs\\SilverJewelry_APIs.csproj|solutionrelative:silverjewelry_apis\\controllers\\silverjewelrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FEBD2A5-666A-4FEF-95FB-96F5E8D92940}|SilverJewelry_DAO\\SilverJewelry_DAO.csproj|e:\\asp.net\\prn231_assignment1_khoanvdse173299_solution\\silverjewelry_dao\\silverjewelrydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FEBD2A5-666A-4FEF-95FB-96F5E8D92940}|SilverJewelry_DAO\\SilverJewelry_DAO.csproj|solutionrelative:silverjewelry_dao\\silverjewelrydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A9DBC32-0783-407D-83B3-D8A437873C5D}|SilverJewelry_Repositories\\SilverJewelry_Repositories.csproj|e:\\asp.net\\prn231_assignment1_khoanvdse173299_solution\\silverjewelry_repositories\\silverjewelryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A9DBC32-0783-407D-83B3-D8A437873C5D}|SilverJewelry_Repositories\\SilverJewelry_Repositories.csproj|solutionrelative:silverjewelry_repositories\\silverjewelryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,58 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SilverJewelryDAO.cs",
-              "DocumentMoniker": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_DAO\\SilverJewelryDAO.cs",
-              "RelativeDocumentMoniker": "SilverJewelry_DAO\\SilverJewelryDAO.cs",
-              "ToolTip": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_DAO\\SilverJewelryDAO.cs",
-              "RelativeToolTip": "SilverJewelry_DAO\\SilverJewelryDAO.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAowD8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T19:21:07.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SilverJewelryRepository.cs",
-              "DocumentMoniker": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_Repositories\\SilverJewelryRepository.cs",
-              "RelativeDocumentMoniker": "SilverJewelry_Repositories\\SilverJewelryRepository.cs",
-              "ToolTip": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_Repositories\\SilverJewelryRepository.cs",
-              "RelativeToolTip": "SilverJewelry_Repositories\\SilverJewelryRepository.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T19:20:58.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SilverJewelryController.cs",
-              "DocumentMoniker": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_APIs\\Controllers\\SilverJewelryController.cs",
-              "RelativeDocumentMoniker": "SilverJewelry_APIs\\Controllers\\SilverJewelryController.cs",
-              "ToolTip": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_APIs\\Controllers\\SilverJewelryController.cs",
-              "RelativeToolTip": "SilverJewelry_APIs\\Controllers\\SilverJewelryController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwCIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T19:13:21.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_RazorPages\\Pages\\SilverJewelryPages\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "SilverJewelry_RazorPages\\Pages\\SilverJewelryPages\\Create.cshtml.cs",
-              "ToolTip": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_RazorPages\\Pages\\SilverJewelryPages\\Create.cshtml.cs",
-              "RelativeToolTip": "SilverJewelry_RazorPages\\Pages\\SilverJewelryPages\\Create.cshtml.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAQwDEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T19:04:45.186Z",
-              "EditorCaption": ""
             }
           ]
         }

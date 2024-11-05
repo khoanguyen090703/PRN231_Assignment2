@@ -274,3 +274,4 @@ E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_RazorPages\
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_RazorPages\obj\Debug\net8.0\SilverJewelry_RazorPages.genruntimeconfig.cache
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_RazorPages\obj\Debug\net8.0\ref\SilverJewelry_RazorPages.dll
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_RazorPages\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_RazorPages\obj\Debug\net8.0\SilverJewelry_RazorPages.sourcelink.json

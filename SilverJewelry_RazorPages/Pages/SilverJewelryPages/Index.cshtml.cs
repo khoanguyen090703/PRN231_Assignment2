@@ -22,21 +22,31 @@ namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
 
         public IList<SilverJewelry> SilverJewelry { get;set; } = default!;
 
-        public async Task OnGetAsync()
+        [BindProperty]
+        public string SearchValue { get; set; } = "";
+
+        public async Task<IActionResult> OnGetAsync(string searchValue)
         {
             var accessToken = HttpContext.Session.GetString("AccessToken");
             if(string.IsNullOrEmpty(accessToken))
             {
-                RedirectToPage("/Login");
+                return RedirectToPage("/Login");
             }
 
-            HttpResponseMessage response = await _httpClient.GetAsync("http://localhost:5174/SilverJewelry");
+            if(!string.IsNullOrEmpty(searchValue) || !string.IsNullOrWhiteSpace(searchValue))
+            {
+                SearchValue = searchValue;
+            }
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+            HttpResponseMessage response = await _httpClient.GetAsync($"http://localhost:5174/SilverJewelry?searchValue={SearchValue}");
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
             };
             var data = await response.Content.ReadAsStringAsync();
             SilverJewelry = JsonSerializer.Deserialize<List<SilverJewelry>>(data, options);
+
+            return Page();
         }
     }
 }

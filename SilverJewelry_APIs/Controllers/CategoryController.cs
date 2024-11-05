@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SilverJewelry_Repositories;
 using SilverJewelry_Repositories.Interfaces;
 
@@ -16,6 +17,7 @@ namespace SilverJewelry_APIs.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "1")]
         public async Task<IActionResult> GetCategories()
         {
             var response = await _categoryRepository.GetAll();
@@ -23,6 +25,7 @@ namespace SilverJewelry_APIs.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "1")]
         public async Task<IActionResult> GetCategory(string id)
         {
             var response = await _categoryRepository.GetById(id);

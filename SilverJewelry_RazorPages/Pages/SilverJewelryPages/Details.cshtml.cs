@@ -30,30 +30,43 @@ namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
                 RedirectToPage("/Login");
             }
 
-
+            //var role = HttpContext.Session.GetInt32("Role");
+            //if (role == null || role != 1)
+            //{
+            //    RedirectToPage("/Privacy");
+            //}
 
             if (id == null)
             {
                 return NotFound();
             }
 
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
             HttpResponseMessage response = await _httpClient.GetAsync("http://localhost:5174/SilverJewelry/" + id);
-            var options = new JsonSerializerOptions
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                PropertyNameCaseInsensitive = true,
-            };
-            var data = await response.Content.ReadAsStringAsync();
-            var silverJewelry = JsonSerializer.Deserialize<SilverJewelry>(data, options);
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true,
+                };
+                var data = await response.Content.ReadAsStringAsync();
+                var silverJewelry = JsonSerializer.Deserialize<SilverJewelry>(data, options);
 
-            if (silverJewelry == null)
-            {
-                return NotFound();
+                if (silverJewelry == null)
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    SilverJewelry = silverJewelry;
+                }
+                return Page();
             }
-            else
+            else if (response.StatusCode == System.Net.HttpStatusCode.Forbidden)
             {
-                SilverJewelry = silverJewelry;
+                return RedirectToPage("/Privacy");
             }
-            return Page();
+            return RedirectToPage("./Index");
         }
     }
 }

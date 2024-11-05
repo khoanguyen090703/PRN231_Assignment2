@@ -39,7 +39,7 @@ namespace SilverJewelry_APIs.Controllers
             try
             {
                 var response = await _branchAccountRepository.Login(request.Email, request.Password);
-                return Ok(new { accessToken = response });
+                return Ok(response);
             }   
             catch (Exception ex)
             {

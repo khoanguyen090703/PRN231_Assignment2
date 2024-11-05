@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using SilverJewelry_BOs;
 using SilverJewelry_Repositories.Interfaces;
+using SilverJewelry_Repositories.Models.Request;
 
 namespace SilverJewelry_APIs.Controllers
 {
@@ -16,6 +19,7 @@ namespace SilverJewelry_APIs.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetSilverJewelries([FromQuery] string? searchValue)
         {
             var response = await _silverJewelryRepository.GetAll(searchValue?.ToLower());
@@ -23,6 +27,7 @@ namespace SilverJewelry_APIs.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "1")]
         public async Task<IActionResult> GetSilverJewelry(string id)
         {
             var response = await _silverJewelryRepository.GetById(id);
@@ -30,21 +35,24 @@ namespace SilverJewelry_APIs.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateSilverJewelry([FromBody]SilverJewelry silverJewelry)
+        [Authorize(Roles = "1")]
+        public async Task<IActionResult> CreateSilverJewelry([FromBody]CreateSilverJewelryRequest silverJewelry)
         {
             await _silverJewelryRepository.Insert(silverJewelry);
             return StatusCode(201, new { message = "Create silver jewelry success!" });
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> CreateSilverJewelry([FromBody] SilverJewelry silverJewelry, string id)
+        [Authorize(Roles = "1")]
+        public async Task<IActionResult> UpdateSilverJewelry([FromBody] SilverJewelry silverJewelry, string id)
         {
             await _silverJewelryRepository.UpdateById(id, silverJewelry);
             return Ok(new { message = "Update silver jewelry success!" });
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> CreateSilverJewelry(string id)
+        [Authorize(Roles = "1")]
+        public async Task<IActionResult> DeleteSilverJewelry(string id)
         {
             await _silverJewelryRepository.DeleteById(id);
             return Ok(new { message = "Delete silver jewelry success!" });

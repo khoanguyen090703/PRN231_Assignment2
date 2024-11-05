@@ -54,6 +54,7 @@ namespace SilverJewelry_RazorPages.Pages
                 if (loginResponse != null && !string.IsNullOrEmpty(loginResponse.AccessToken))
                 {
                     HttpContext.Session.SetString("AccessToken", loginResponse.AccessToken);
+                    HttpContext.Session.SetInt32("Role", loginResponse.Role);
                     return RedirectToPage("/SilverJewelryPages/Index");
                 }
             }

@@ -81,3 +81,4 @@ E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_APIs\obj\De
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_APIs\obj\Debug\net8.0\SilverJewelry_APIs.genruntimeconfig.cache
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_APIs\obj\Debug\net8.0\ref\SilverJewelry_APIs.dll
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_APIs\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_APIs\obj\Debug\net8.0\SilverJewelry_APIs.sourcelink.json

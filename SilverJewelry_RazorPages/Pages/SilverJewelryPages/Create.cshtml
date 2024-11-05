@@ -14,11 +14,6 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="SilverJewelry.SilverJewelryId" class="control-label"></label>
-                <input asp-for="SilverJewelry.SilverJewelryId" class="form-control" />
-                <span asp-validation-for="SilverJewelry.SilverJewelryId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="SilverJewelry.SilverJewelryName" class="control-label"></label>
                 <input asp-for="SilverJewelry.SilverJewelryName" class="form-control" />
                 <span asp-validation-for="SilverJewelry.SilverJewelryName" class="text-danger"></span>
@@ -43,11 +38,7 @@
                 <input asp-for="SilverJewelry.ProductionYear" class="form-control" />
                 <span asp-validation-for="SilverJewelry.ProductionYear" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="SilverJewelry.CreatedDate" class="control-label"></label>
-                <input asp-for="SilverJewelry.CreatedDate" class="form-control" />
-                <span asp-validation-for="SilverJewelry.CreatedDate" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <label asp-for="SilverJewelry.Category" class="control-label"></label>
                 <select asp-for="SilverJewelry.CategoryId" class ="form-control" asp-items="ViewBag.Category"></select>

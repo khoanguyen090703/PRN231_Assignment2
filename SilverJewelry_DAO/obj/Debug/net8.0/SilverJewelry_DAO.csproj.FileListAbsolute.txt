@@ -13,3 +13,4 @@ E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Deb
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\refint\SilverJewelry_DAO.dll
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.pdb
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\ref\SilverJewelry_DAO.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.sourcelink.json

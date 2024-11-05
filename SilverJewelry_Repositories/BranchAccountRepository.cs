@@ -3,6 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using SilverJewelry_BOs;
 using SilverJewelry_DAO;
 using SilverJewelry_Repositories.Interfaces;
+using SilverJewelry_Repositories.Models.Response;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -34,7 +35,7 @@ namespace SilverJewelry_Repositories
             return await _branchAccountDAO.GetById(id);
         }
 
-        public async Task<string> Login(string email, string password)
+        public async Task<LoginResponse> Login(string email, string password)
         {
             var user = await _branchAccountDAO.GetByEmail(email);
             if (user == null || !user.AccountPassword.Equals(password))
@@ -43,7 +44,12 @@ namespace SilverJewelry_Repositories
             }
 
             var accessToken = GenerateAccessTokenString(user);
-            return accessToken;
+            var response = new LoginResponse
+            {
+                AccessToken = accessToken,
+                Role = (int)user.Role
+            };
+            return response;
         }
 
         private string GenerateAccessTokenString(BranchAccount user)

@@ -1,6 +1,7 @@
 ﻿using SilverJewelry_BOs;
 using SilverJewelry_DAO;
 using SilverJewelry_Repositories.Interfaces;
+using SilverJewelry_Repositories.Models.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,9 +34,21 @@ namespace SilverJewelry_Repositories
             return await _silverJewelryDAO.GetById(id);
         }
 
-        public async Task Insert(SilverJewelry silverJewelry)
+        public async Task Insert(CreateSilverJewelryRequest silverJewelry)
         {
-            await _silverJewelryDAO.Insert(silverJewelry);
+            var newSilverJewelry = new SilverJewelry
+            {
+                SilverJewelryId = Guid.NewGuid().ToString(),
+                SilverJewelryName = silverJewelry.SilverJewelryName,
+                SilverJewelryDescription = silverJewelry.SilverJewelryDescription,
+                CreatedDate = DateTime.Now,
+                MetalWeight = silverJewelry.MetalWeight,
+                Price = silverJewelry.Price,
+                ProductionYear = silverJewelry.ProductionYear,
+                CategoryId = silverJewelry.CategoryId
+            };
+
+            await _silverJewelryDAO.Insert(newSilverJewelry);
         }
 
         public async Task Update(SilverJewelry silverJewelry)

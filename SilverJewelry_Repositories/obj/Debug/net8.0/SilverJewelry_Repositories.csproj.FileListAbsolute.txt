@@ -15,3 +15,4 @@ E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositorie
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\refint\SilverJewelry_Repositories.dll
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJewelry_Repositories.pdb
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\ref\SilverJewelry_Repositories.dll
+E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_Repositories\obj\Debug\net8.0\SilverJewelry_Repositories.sourcelink.json

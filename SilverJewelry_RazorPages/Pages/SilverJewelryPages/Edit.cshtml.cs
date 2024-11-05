@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -13,11 +14,11 @@ namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
 {
     public class EditModel : PageModel
     {
-        private readonly SilverJewelry_DAO.Data.SilverJewelry2023DbContext _context;
+        private readonly HttpClient _httpClient;
 
-        public EditModel(SilverJewelry_DAO.Data.SilverJewelry2023DbContext context)
+        public EditModel()
         {
-            _context = context;
+            _httpClient = new HttpClient();
         }
 
         [BindProperty]
@@ -25,18 +26,42 @@ namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
 
         public async Task<IActionResult> OnGetAsync(string id)
         {
+            var accessToken = HttpContext.Session.GetString("AccessToken");
+            if (string.IsNullOrEmpty(accessToken))
+            {
+                return RedirectToPage("/Login");
+            }
+
+            var role = HttpContext.Session.GetInt32("Role");
+            if (role == null || role != 1)
+            {
+                return RedirectToPage("/Privacy");
+            }
+            
             if (id == null)
             {
                 return NotFound();
             }
 
-            var silverjewelry =  await _context.SilverJewelries.FirstOrDefaultAsync(m => m.SilverJewelryId == id);
-            if (silverjewelry == null)
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+            HttpResponseMessage response = await _httpClient.GetAsync("http://localhost:5174/SilverJewelry/" + id);
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+            };
+            var data = await response.Content.ReadAsStringAsync();
+            var silverJewelry = JsonSerializer.Deserialize<SilverJewelry>(data, options);
+
+            if (silverJewelry == null)
             {
                 return NotFound();
             }
-            SilverJewelry = silverjewelry;
-           ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId");
+            SilverJewelry = silverJewelry;
+
+            HttpResponseMessage categoriesResponse = await _httpClient.GetAsync("http://localhost:5174/Category");
+            var categoriesData = await categoriesResponse.Content.ReadAsStringAsync();
+            var categories = JsonSerializer.Deserialize<List<Category>>(categoriesData, options);
+            ViewData["CategoryId"] = new SelectList(categories, "CategoryId", "CategoryName");
             return Page();
         }
 
@@ -46,33 +71,24 @@ namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
         {
             if (!ModelState.IsValid)
             {
-                return Page();
+                return RedirectToPage();
             }
 
-            _context.Attach(SilverJewelry).State = EntityState.Modified;
+            var accessToken = HttpContext.Session.GetString("AccessToken");
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+            HttpContent content = JsonContent.Create(SilverJewelry);
+            HttpResponseMessage response = await _httpClient.PutAsync("http://localhost:5174/SilverJewelry/" + SilverJewelry.SilverJewelryId, content);
 
-            try
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                await _context.SaveChangesAsync();
+                return RedirectToPage("./Index");
             }
-            catch (DbUpdateConcurrencyException)
+            else if (response.StatusCode == System.Net.HttpStatusCode.Forbidden)
             {
-                if (!SilverJewelryExists(SilverJewelry.SilverJewelryId))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return RedirectToPage("/Privacy", new {message = "You are not allowed to access edit function!"});
             }
 
-            return RedirectToPage("./Index");
-        }
-
-        private bool SilverJewelryExists(string id)
-        {
-            return _context.SilverJewelries.Any(e => e.SilverJewelryId == id);
+            return RedirectToPage();
         }
     }
 }

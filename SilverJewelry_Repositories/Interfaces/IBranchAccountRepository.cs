@@ -1,4 +1,5 @@
 ﻿using SilverJewelry_BOs;
+using SilverJewelry_Repositories.Models.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,6 @@ namespace SilverJewelry_Repositories.Interfaces
 
         Task<List<BranchAccount>> GetAll();
 
-        Task<string> Login(string email, string password);
+        Task<LoginResponse> Login(string email, string password);
     }
 }
