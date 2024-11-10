@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using SilverJewelry_BOs;
 using SilverJewelry_DAO.Data;
+using SilverJewelry_RazorPages.Models.Response;
 
 namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
 {
@@ -38,13 +39,15 @@ namespace SilverJewelry_RazorPages.Pages.SilverJewelryPages
                 SearchValue = searchValue;
             }
             _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
-            HttpResponseMessage response = await _httpClient.GetAsync($"http://localhost:5174/SilverJewelry?searchValue={SearchValue}");
+            HttpResponseMessage response = await _httpClient.GetAsync($"http://localhost:5174/odata/SilverJewelry?searchValue={SearchValue}");
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
             };
             var data = await response.Content.ReadAsStringAsync();
-            SilverJewelry = JsonSerializer.Deserialize<List<SilverJewelry>>(data, options);
+            var oDataResponse = JsonSerializer.Deserialize<ODataResponse<List<SilverJewelry>>>(data, options);
+
+            SilverJewelry = oDataResponse?.Value ?? new List<SilverJewelry>();
 
             return Page();
         }

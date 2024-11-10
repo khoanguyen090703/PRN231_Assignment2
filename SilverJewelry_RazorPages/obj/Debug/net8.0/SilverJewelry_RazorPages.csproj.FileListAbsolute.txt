@@ -552,3 +552,8 @@ E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_Ra
 E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_RazorPages\obj\Debug\net8.0\SilverJewelry_RazorPages.pdb
 E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_RazorPages\obj\Debug\net8.0\SilverJewelry_RazorPages.genruntimeconfig.cache
 E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_RazorPages\obj\Debug\net8.0\ref\SilverJewelry_RazorPages.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_RazorPages\bin\Debug\net8.0\Microsoft.AspNetCore.OData.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_RazorPages\bin\Debug\net8.0\Microsoft.OData.Core.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_RazorPages\bin\Debug\net8.0\Microsoft.OData.Edm.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_RazorPages\bin\Debug\net8.0\Microsoft.OData.ModelBuilder.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_RazorPages\bin\Debug\net8.0\Microsoft.Spatial.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SilverJewelry_RazorPages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7a3dac9eec07d474aa4942076b3e8875ac0e446")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fa7912e40f2ac5a61d35bec80c345d95763c314")]
 [assembly: System.Reflection.AssemblyProductAttribute("SilverJewelry_RazorPages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SilverJewelry_RazorPages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

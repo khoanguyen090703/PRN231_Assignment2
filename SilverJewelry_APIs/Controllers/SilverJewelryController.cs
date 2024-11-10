@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using SilverJewelry_BOs;
 using SilverJewelry_Repositories.Interfaces;
@@ -7,9 +9,7 @@ using SilverJewelry_Repositories.Models.Request;
 
 namespace SilverJewelry_APIs.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class SilverJewelryController : Controller
+    public class SilverJewelryController : ODataController
     {
         private readonly ISilverJewelryRepository _silverJewelryRepository;
 
@@ -18,23 +18,23 @@ namespace SilverJewelry_APIs.Controllers
             _silverJewelryRepository = silverJewelryRepository;
         }
 
-        [HttpGet]
-        [Authorize]
-        public async Task<IActionResult> GetSilverJewelries([FromQuery] string? searchValue)
+        [EnableQuery]
+        [Authorize(Roles = "1,2")]
+        public async Task<IActionResult> GetSilverJewelry([FromQuery] string? searchValue)
         {
             var response = await _silverJewelryRepository.GetAll(searchValue?.ToLower());
             return Ok(response);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("[controller]/{id}")]
         [Authorize(Roles = "1")]
-        public async Task<IActionResult> GetSilverJewelry(string id)
+        public async Task<IActionResult> GetSilverJewelryById(string id)
         {
             var response = await _silverJewelryRepository.GetById(id);
             return Ok(response);
         }
 
-        [HttpPost]
+        [HttpPost("[controller]")]
         [Authorize(Roles = "1")]
         public async Task<IActionResult> CreateSilverJewelry([FromBody]CreateSilverJewelryRequest silverJewelry)
         {
@@ -42,7 +42,7 @@ namespace SilverJewelry_APIs.Controllers
             return StatusCode(201, new { message = "Create silver jewelry success!" });
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("[controller]/{id}")]
         [Authorize(Roles = "1")]
         public async Task<IActionResult> UpdateSilverJewelry([FromBody] SilverJewelry silverJewelry, string id)
         {
@@ -50,7 +50,7 @@ namespace SilverJewelry_APIs.Controllers
             return Ok(new { message = "Update silver jewelry success!" });
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("[controller]/{id}")]
         [Authorize(Roles = "1")]
         public async Task<IActionResult> DeleteSilverJewelry(string id)
         {
