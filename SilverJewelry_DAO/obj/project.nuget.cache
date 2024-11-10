@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ifaVNDxTGZ5NVDclaoouRTIFT4sKY3jZv6UH56IztnTHZjfdhqZeNiq5Vc0hnP5AsjvHgp025BIL5EM9OgrVWw==",
+  "dgSpecHash": "bzlYLuI66P2mydt4GvrJwX85yB3wJxNhs2nHLM4KzaAGpxtuFA8Tm+qZ33lDZfsP/9aWua+i7ZN4tWc/GhtyXQ==",
   "success": true,
-  "projectFilePath": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_DAO\\SilverJewelry_DAO.csproj",
+  "projectFilePath": "E:\\FPT University\\FALL2024\\PRN231\\Assignment\\PRN231_Assignment2\\SilverJewelry_DAO\\SilverJewelry_DAO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

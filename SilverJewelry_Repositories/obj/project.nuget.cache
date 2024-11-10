@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+Nb09z/SQI5AbO8ShhVw0ClUwwxHqZX372eRl/f/r6cLesb+d4PvN1QSYk/KGhDaI8/gXU9xUiayq45Cwk6Hjg==",
+  "dgSpecHash": "FtgPikHYp48cDM7T9JT8+18zDsXY+UGooOswzvCzwPK6ePA1YULIi0yAlD355q1QMn5dyqqX+HqpdhtRjGhwQw==",
   "success": true,
-  "projectFilePath": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_Repositories\\SilverJewelry_Repositories.csproj",
+  "projectFilePath": "E:\\FPT University\\FALL2024\\PRN231\\Assignment\\PRN231_Assignment2\\SilverJewelry_Repositories\\SilverJewelry_Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

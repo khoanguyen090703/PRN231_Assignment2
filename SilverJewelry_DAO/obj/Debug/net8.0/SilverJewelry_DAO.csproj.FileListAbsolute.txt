@@ -14,3 +14,19 @@ E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Deb
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.pdb
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\ref\SilverJewelry_DAO.dll
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.sourcelink.json
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_DAO.deps.json
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_DAO.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_DAO.pdb
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_BOs.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\bin\Debug\net8.0\SilverJewelry_BOs.pdb
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.csproj.AssemblyReference.cache
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.AssemblyInfoInputs.cache
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.AssemblyInfo.cs
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.csproj.CoreCompileInputs.cache
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.sourcelink.json
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\SilverJe.03A29E5B.Up2Date
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\refint\SilverJewelry_DAO.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\SilverJewelry_DAO.pdb
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_DAO\obj\Debug\net8.0\ref\SilverJewelry_DAO.dll

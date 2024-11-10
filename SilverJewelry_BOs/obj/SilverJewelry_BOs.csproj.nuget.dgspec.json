@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_BOs\\SilverJewelry_BOs.csproj": {}
+    "E:\\FPT University\\FALL2024\\PRN231\\Assignment\\PRN231_Assignment2\\SilverJewelry_BOs\\SilverJewelry_BOs.csproj": {}
   },
   "projects": {
-    "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_BOs\\SilverJewelry_BOs.csproj": {
+    "E:\\FPT University\\FALL2024\\PRN231\\Assignment\\PRN231_Assignment2\\SilverJewelry_BOs\\SilverJewelry_BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_BOs\\SilverJewelry_BOs.csproj",
+        "projectUniqueName": "E:\\FPT University\\FALL2024\\PRN231\\Assignment\\PRN231_Assignment2\\SilverJewelry_BOs\\SilverJewelry_BOs.csproj",
         "projectName": "SilverJewelry_BOs",
-        "projectPath": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_BOs\\SilverJewelry_BOs.csproj",
+        "projectPath": "E:\\FPT University\\FALL2024\\PRN231\\Assignment\\PRN231_Assignment2\\SilverJewelry_BOs\\SilverJewelry_BOs.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.NET\\PRN231_Assignment1_KhoaNVDSE173299_Solution\\SilverJewelry_BOs\\obj\\",
+        "outputPath": "E:\\FPT University\\FALL2024\\PRN231\\Assignment\\PRN231_Assignment2\\SilverJewelry_BOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

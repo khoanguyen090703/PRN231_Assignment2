@@ -27,3 +27,18 @@ E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_BOs\obj\Deb
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.genruntimeconfig.cache
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_BOs\obj\Debug\net8.0\ref\SilverJewelry_BOs.dll
 E:\ASP.NET\PRN231_Assignment1_KhoaNVDSE173299_Solution\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.sourcelink.json
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\bin\Debug\net8.0\SilverJewelry_BOs.deps.json
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\bin\Debug\net8.0\SilverJewelry_BOs.runtimeconfig.json
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\bin\Debug\net8.0\SilverJewelry_BOs.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\bin\Debug\net8.0\SilverJewelry_BOs.pdb
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.csproj.AssemblyReference.cache
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.AssemblyInfoInputs.cache
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.AssemblyInfo.cs
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.csproj.CoreCompileInputs.cache
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.sourcelink.json
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\refint\SilverJewelry_BOs.dll
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.pdb
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\SilverJewelry_BOs.genruntimeconfig.cache
+E:\FPT University\FALL2024\PRN231\Assignment\PRN231_Assignment2\SilverJewelry_BOs\obj\Debug\net8.0\ref\SilverJewelry_BOs.dll
